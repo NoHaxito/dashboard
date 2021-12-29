@@ -46,6 +46,9 @@
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="{{env('DISCORD_INVITE_URL')}}" class="nav-link" target="__blank">Discord</a>
             </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="https://uptime.spiralnodes.xyz" class="nav-link" target="__blank">Status</a>
+            </li>
         </ul>
 
         <!-- Right navbar links -->
@@ -169,7 +172,7 @@
                         <a href="{{route('servers.index')}}"
                            class="nav-link @if(Request::routeIs('servers.*')) active @endif">
                             <i class="nav-icon fa fa-server"></i>
-                            <p>Servers
+                            <p>Instances
                                 <span
                                     class="badge badge-info right">{{Auth::user()->servers()->count()}} / {{Auth::user()->server_limit}}</span>
                             </p>
@@ -181,7 +184,7 @@
                             <a href="{{route('store.index')}}"
                                class="nav-link @if(Request::routeIs('store.*') || Request::routeIs('checkout')) active @endif">
                                 <i class="nav-icon fa fa-coins"></i>
-                                <p>Store</p>
+                                <p>Shop</p>
                             </a>
                         </li>
                     @endif
