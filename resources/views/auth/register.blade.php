@@ -8,7 +8,7 @@
                 <a href="{{route('welcome')}}" class="h1"><b class="mr-1">{{config('app.name', 'Laravel')}}</b></a>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Register a new membership</p>
+                <p class="login-box-msg">Register a new account</p>
 
                 <form method="POST" action="{{ route('register') }}">
 
@@ -122,7 +122,7 @@
 {{--                    </a>--}}
 {{--                </div>--}}
 
-                <a href="{{route('login')}}" class="text-center">I already have a membership</a>
+                <a href="{{route('login')}}" class="text-center">I already have a account</a>
             </div>
             <!-- /.form-box -->
         </div><!-- /.card -->
